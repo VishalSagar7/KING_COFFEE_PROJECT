@@ -147,6 +147,31 @@ header nav .nav-icons ul li {
 }
 
 
+.path-div{
+    height: 25px;
+    width: 100%;
+    /* background-color: pink; */
+    margin-bottom: 40px;
+    padding-inline: 20px;
+}
+.path-div a{
+    text-decoration: none;
+}
+.path-div .home{
+    color: gray;
+}
+.path-div .golden{
+    color: goldenrod;
+}
+.path-div span{
+    color: black;
+    margin-inline: 10px;
+    font-weight: 600;
+}
+.path-div p{
+    display: inline;
+}
+
 
 .banner-div {
     margin-top: 130px;

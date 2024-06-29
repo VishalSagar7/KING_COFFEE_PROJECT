@@ -5,16 +5,10 @@
     scroll-behavior: smooth;
 }
 
-body{
-    overflow-x: hidden;
-    width: 100%;
-    scroll-behavior: smooth;
-}
-
-/* styling of header  */
-
 header{
     width: 100%;
+    position: fixed;
+    top: 0;
 }
 header .offer{
     width: 100%;
@@ -34,13 +28,10 @@ header .offer{
 
 header nav{
     display: flex;
-    padding-inline: 40px;
     justify-content: space-between;
     align-items: center;
     padding: 2px 10px;
     background-color: #fff;
-    position: fixed;
-    top: 35px;
     width: 100%;
     z-index: 100;
 }
@@ -52,9 +43,7 @@ nav .hamburger a{
     font-size: 1.5rem;
     text-decoration: none;
 }
-header nav .nav-logo{
 
-}
 header nav .nav-logo img{
     width: 90px;
     /* height: 110px; */
@@ -132,6 +121,14 @@ header nav .nav-icons ul{
     }
 }
 
+
+
+.heading-div{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
 .path-div{
     height: 25px;
     width: 100%;
@@ -156,121 +153,76 @@ header nav .nav-icons ul{
 .path-div p{
     display: inline;
 }
-.contactus-banner{
-    margin-top: 100px;
+
+
+.media-banner{
+    margin-top: 150px;
     width: 100%;
-    height: 370px;
-    background-image: url('https://cdn.shopify.com/s/files/1/0650/5611/2867/files/contact_banner.png?v=1666252101');
-    background-position: center;
-    background-size: cover;
+    height: 350px;
+    margin-bottom: 70px;
 }
-.contact-us-div{
-    height: auto;
+.media-banner img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.media-container{
+    margin-top: 50px;
     width: 90%;
     margin: auto;
+    height: auto;
+    /* background-color: aqua; */
+    text-align: center;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    justify-content: space-between;
+    row-gap: 40px;
 }
-.contact-us-div .contact-us{
+.media-container h1{
+    margin-bottom: 70px;
+}
+
+.media-container .media-card{
+    border-radius: 5px;
+    height: 500px;
+    width: 430px;
+    background-color: rgb(242,242,242);
+    padding: 15px;
+}
+.media-container .media-card .img-div{
+    height: 85%;
+    width: 100%;
+    /* background-color: blueviolet; */
+}
+.media-container .media-card .img-div img{
     height: 100%;
-    width: 50%;
-    /* border: 1px solid black; */
+    width: 100%;
+}
+.media-card-bottom-div{
+    padding-inline: 10px;
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.contact-us-div .contact-us h1{
-    font-weight: 500;
-}
-.contact-us-div .send-us-msg{
-    /* border: 1px solid black; */
-    height: 100%;
-}
-.contact-us-div .contact-us .info-divs{
-    margin-top: 25px;
-    display: flex;
-    /* border: 1px solid black; */
-}
-.contact-us-div .contact-us .info-divs h3{
-    font-size: 20px;
-    font-weight: 500;
-}
-.contact-us-div .contact-us .info-divs p{
-    color: rgb(113, 111, 111);
-    margin-top: 5px;
-}
-.contact-us-div .contact-us .info-divs .icon-div{
-    display: flex;
-    justify-self: center;
+    justify-content: space-between;
     align-items: center;
-    /* border: 1px solid blue; */
+    height: 14%;
 }
-.contact-us-div .contact-us .info-divs .icon-div i{
-    font-size: 30px;
-    margin-left: 5px;
+.media-card-bottom-div img{
+    height: 30px;
 }
-.contact-us-div .contact-us .info-divs .icon-div{
-    width: 50px;
-}
-.contact-us-div .send-us-msg{
-    height: 100%;
-    width: 50%;
-    /* background-color: antiquewhite; */
-}
-.contact-us-div .send-us-msg h1{
+.media-card-bottom-div h3{
+    display: block;
     font-weight: 500;
+    cursor: pointer;
 }
-.contact-us-div .send-us-msg p{
-    margin-block: 15px;
-}
-.contact-us-div .send-us-msg form input{
-    width: 100%;
-    margin-block: 10px;
-    height: 60px;
-    border: 1px solid rgb(187, 183, 183);
-}
-.contact-us-div .send-us-msg form input::placeholder{
-    padding-left: 20px;
-}
-.contact-us-div .send-us-msg form textarea{
-    width: 100%;
-    height: 200px;
-    border: 1px solid rgb(187, 183, 183);
-}
-.contact-us-div .send-us-msg form button{
-    margin-top: 10px;
-    font-size: 20px;
-    color: white;
-    height: 50px;
-    width: 200px;
-    background-color: #A45F41;
-    border: 1px solid #A45F41;
-    box-sizing: border-box;
-    border: none;
-    border-radius: 7px;
-    transition-duration: 400ms;
-}
-.contact-us-div .send-us-msg form button:hover{
-    color: black;
-    border: 1px solid #A45F41;
-    background-color: white;
-}
-.map-container{
-    margin-top: 70px;
-    height: 350px;
-    width: 100%;
-    /* border: 1px solid black; */
-}
-.map-container iframe{
-    height: 100%;
-    width: 100%;
+.media-card-bottom-div h3:hover{
+    color: rgb(189, 141, 22);
 }
 
-  /* styling for footer */
 
-  .container {
+
+/* styling for footer  */
+
+.container {
     width: 100%;
     margin-top: 40px;
     padding: auto;
@@ -329,6 +281,10 @@ header nav .nav-icons ul{
     margin-bottom: 10px;
     font-size: 18px;
     color: #333;
+    cursor: pointer;
+}
+.column h3:hover{
+    color: #a3572a;
 }
 
 .column ul {
@@ -346,8 +302,6 @@ header nav .nav-icons ul{
 .column ul li a:hover {
     text-decoration: underline;
 }
-
-
 .wp-logo{
     height: 30px;
     width: 30px;
@@ -384,7 +338,8 @@ header nav .nav-icons ul{
     color: white;
 }
 
- /* responsiveness for header  */
+ /* responsiveness for header */
+
 
  @media (max-width: 1050px){
     nav .nav-sec{
@@ -402,55 +357,6 @@ header nav .nav-icons ul{
         display: flex;
         justify-content: center;
     }
-}
-@media (min-width: 1150px){
-    .hamburger{
-        display: none;
-    }
-
-    
-}
-
-@media (min-width:900px){
-    .coffee-flavour{
-        width:100%;
-        /* background-color: rgb(210, 227, 210); */
-        position: absolute;
-        top: 500px;
-    }
-    .flavour-items{
-        flex-wrap: nowrap;
-    }
-}
-
-@media (max-width: 900px){
-    .coffee-flavour{
-        padding-top: 2rem;
-    }
-}
-
-
-@media only screen and (max-width: 1195px) {
-    .contactus-banner{
-        height: 150px;
-    }
-    .contact-us-div{
-        display: flex;
-        flex-direction: column;
-    }
-    .contact-us-div .contact-us{
-        height: 50%;
-        width: 100%;
-  
-    }
-    .contact-us-div .send-us-msg{
-        margin-top: 50px;
-        width: 100%;
-     
-        height: 50%;
-    }
-
-    /* styling for footer responsiveness */
 
     .items-container {
         flex-direction: column;
@@ -472,4 +378,11 @@ header nav .nav-icons ul{
         
     }
 
+}
+@media (min-width: 1150px){
+    .hamburger{
+        display: none;
+    }
+
+    
 }
